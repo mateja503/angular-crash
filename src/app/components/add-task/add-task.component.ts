@@ -7,7 +7,6 @@ import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-add-task',
-  standalone: true,
   imports: [FormsModule, NgIf],
   templateUrl: './add-task.component.html',
   styleUrl: './add-task.component.scss'
