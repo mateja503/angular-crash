@@ -11,7 +11,7 @@ import { NgIf } from '@angular/common';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit{
+export class HeaderComponent {
 
 
   title: string = 'Task Tracker';
@@ -23,7 +23,6 @@ export class HeaderComponent implements OnInit{
     this.subscription = this.uiService.onToggle().subscribe((value) => this.showAddTask = value)
   }
 
-  ngOnInit(): void{}
 
   toggleAddTask() {
       this.uiService.toggleAddTask()

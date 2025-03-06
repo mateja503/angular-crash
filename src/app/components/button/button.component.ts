@@ -1,5 +1,5 @@
 import { NgStyle } from '@angular/common';
-import { Component, Input, OnInit, Output, EventEmitter  } from '@angular/core';
+import { Component, Input, Output, EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,7 +7,7 @@ import { Component, Input, OnInit, Output, EventEmitter  } from '@angular/core';
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss'
 })
-export class ButtonComponent implements OnInit {
+export class ButtonComponent  {
 
 
   @Input() text!: string;
@@ -19,9 +19,7 @@ export class ButtonComponent implements OnInit {
   
   }
 
-  ngOnInit(): void {
-   
-  }
+ 
 
   onClick() {
     this.btnClick.emit(); 
